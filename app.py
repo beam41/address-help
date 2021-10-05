@@ -48,10 +48,7 @@ def updateAddress():
             cursor.commit()
 
             return jsonify(True), 200
-        
+
         except Exception as err:
             print(err)
             return jsonify(), 500
-
-app.run()
-# app.run(debug=True, host="0.0.0.0",port=5000)
